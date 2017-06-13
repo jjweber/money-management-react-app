@@ -1,0 +1,297 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: $black;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100%;
+
+  h1 {
+    //background: $moneyGreen;
+    text-align: center;
+    padding: 2rem 0;
+    //margin: 0 -15px;
+  }
+}
+
+
+
+/////////////////////
+/// Header Styles ///
+/////////////////////
+
+header {
+  //position: relative;
+  display: block;
+  width: 100%;
+  //background: $black;
+  //height: 90px;
+
+  .logo {
+    //position: absolute;
+    display: block;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
+    //top:50%; left: 30px;
+    font-size: 18px;
+    @include translateY(-50%);
+  }
+
+  .nav>li>a {
+    padding: 10px 35px;
+  }
+
+  @media only screen and (min-width : 767px) {
+  .logo {
+    font-size: 22px;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+
+  .nav>li>a {
+    padding: 15px;
+  }
+}
+
+  .navbar {
+    width: 100%;
+    background: $black;
+    border: none;
+    color: $white;
+    margin-bottom: 0;
+  }
+
+  .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    color: $white;
+
+    &:hover {
+      color: $moneyGreen;
+    }
+  }
+
+  .navbar-default .navbar-nav>li>a:focus {
+    color: $moneyGreen;
+  }
+
+  nav,
+  nav ul,
+  nav ul li {
+    //color: $black;
+    margin-top: .5rem;
+    padding: 0;
+  }
+
+  nav {
+    //position: absolute;
+    //top: 50%; right: 15px;
+    @include translateY(0%);
+
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 10px;
+
+      &.last {
+        margin: 0;
+      }
+    }
+  }
+}
+
+////////////////////////
+/// Home Page Styles ///
+////////////////////////
+#homeWrap {
+  text-align: center;
+  width: 100%;
+
+  .jumbotron {
+    margin-top: 2rem;
+    border: 2px solid $moneyGreen;
+
+    p {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+//////////////////////////
+/// Budget Page Styles ///
+//////////////////////////
+
+
+////////////////////////////
+/// Expenses Page Styles ///
+////////////////////////////
+
+#expensePageWindow {
+  text-align: center;
+  width: 100%;
+
+  .jumbotron {
+    margin-top: 2rem;
+    border: 2px solid $moneyGreen;
+
+    p {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}
+
+.addExpenseBtn {
+  margin-bottom: 2rem;
+
+  span {
+    margin-right: .5rem;
+  }
+}
+
+.addExpenseModal {
+  //background: $moneyGreen;
+}
+
+.modalBackground {
+  background: $moneyGreen;
+}
+
+.modal-content {
+
+  h2 {
+    text-align: center;
+  }
+}
+
+#addExpenseForm,
+#editExpenseForm,
+#deleteExpenseForm {
+  width: 95%;
+  padding: 1rem;
+  border: 2px solid $black;
+  margin: 1rem auto 3rem auto;
+
+  .btn-success {
+    margin-right: 2rem;
+  }
+}
+
+.edit {
+
+}
+
+.delete {
+  color: $red;
+  margin-left: 10px;
+}
+
+#categoryDropdown,
+#currentCategoryDropdown {
+  margin-bottom: 2rem;
+}
+
+.searchField {
+
+  width: 95%;
+
+  label,
+  input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .control-label {
+    text-align: center;
+  }
+
+  #FilterInput {
+    width: 100%;
+  }
+}
+
+.full-width {
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+/* Add Expense Form Syles */
+
+
+/////////////////////////////
+/// Cash Flow Page Styles ///
+/////////////////////////////
+#cashWindow {
+  text-align: center;
+  width: 100%;
+
+  .jumbotron {
+    margin-top: 2rem;
+    border: 2px solid $moneyGreen;
+
+    p {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+#purchItem {
+  text-align: center;
+}
+
+.addPurchaseBtn {
+  margin-bottom: 2rem;
+
+  span {
+    margin-right: .5rem;
+  }
+}
+
+#addPurchaseForm,
+#editPurchaseForm,
+#deletePurchaseForm {
+  width: 95%;
+  padding: 1rem;
+  border: 2px solid $black;
+  margin: 1rem auto 3rem auto;
+
+  .btn-success {
+    margin-right: 2rem;
+  }
+}
+
+#FilterInput2 {
+  width: 100%;
+}
+
+
+/////////////////////
+/// Footer Styles ///
+/////////////////////
+
+footer {
+  text-align: center;
+  position: sticky;
+  background: $white;
+  border-top: 2px solid $black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 20%;
+
+  p {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
